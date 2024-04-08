@@ -1,0 +1,88 @@
+body{
+    background-color: rgb(26, 189, 239);
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+    font-size: 330%;
+    font-weight: bold;
+    font-style: italic;
+    color: midnightblue;
+}
+
+.elements-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lato';
+    font-weight: 300;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.square {
+    transform: translateY(200px);
+    pointer-events: none;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin: 6px;
+}
+
+.green {
+    transform: translateY(200px);
+    background-color: green;
+    background-image: none;
+}
+
+.red {
+    transform: translateY(200px);
+    background-color: red;
+    background-image: none;
+}
+
+.yellow {
+    transform: translateY(200px);
+    background-color: yellow;
+    background-image: none;
+}
+
+.black {
+    transform: translateY(200px);
+    background-color: black;
+    background-image: none;
+}
+
+#special {
+    transform: translateY(200px);
+    background-color: lightblue;
+    background-image: none;
+}
+
+button {
+    background-color: rgb(233, 178, 12);
+    background-image: none;
+    color: black;
+    margin: 14px;
+    padding: 8px;
+    border-radius: 4px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border: none;
+}
+
+button:hover {
+    background-color: gray;
+}
+
+.controls-container {
+    margin-top: 5px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
