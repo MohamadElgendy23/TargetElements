@@ -1,0 +1,1 @@
+This project allows users to toggle specific elements based on criteria they select. Created using the JS library called anime.js.
