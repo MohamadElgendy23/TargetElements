@@ -72,11 +72,11 @@ var resetAll = function () {
 };
 
 /*Hook Up On Click For Buttons*/
-specialBtn.onclick = special.play;
-greenBtn.onclick = firstGreen.play;
-redYellowBtn.onclick = redYellow.play;
-oddBtn.onclick = odd.play;
-notBlackBtn.onclick = notBlack.play;
-customAllBtn.onclick = customAll.play;
-rotateAllBtn.onclick = rotateAll.play;
+specialBtn.onclick = special.restart;
+greenBtn.onclick = firstGreen.restart;
+redYellowBtn.onclick = redYellow.restart;
+oddBtn.onclick = odd.restart;
+notBlackBtn.onclick = notBlack.restart;
+customAllBtn.onclick = customAll.restart;
+rotateAllBtn.onclick = rotateAll.restart;
 resetBtn.onclick = resetAll;
