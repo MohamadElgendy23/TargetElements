@@ -8,7 +8,8 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 64px;
-    font-size: 330%;
+    margin-bottom: 130px;
+    font-size: 390%;
     font-weight: bold;
     font-style: italic;
     color: midnightblue;
@@ -25,40 +26,34 @@ body{
 }
 
 .square {
-    transform: translateY(200px);
     pointer-events: none;
     position: relative;
-    width: 60px;
-    height: 60px;
-    margin: 6px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
 }
 
 .green {
-    transform: translateY(200px);
     background-color: green;
     background-image: none;
 }
 
 .red {
-    transform: translateY(200px);
     background-color: red;
     background-image: none;
 }
 
 .yellow {
-    transform: translateY(200px);
     background-color: yellow;
     background-image: none;
 }
 
 .black {
-    transform: translateY(200px);
     background-color: black;
     background-image: none;
 }
 
 #special {
-    transform: translateY(200px);
     background-color: lightblue;
     background-image: none;
 }
@@ -67,8 +62,8 @@ button {
     background-color: rgb(233, 178, 12);
     background-image: none;
     color: black;
-    margin: 14px;
-    padding: 8px;
+    margin: 15px;
+    padding: 20px;
     border-radius: 4px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
@@ -76,11 +71,12 @@ button {
 }
 
 button:hover {
-    background-color: gray;
+    background-color: rgb(193, 59, 193);
+    transform: scale(1.2);
 }
 
 .controls-container {
-    margin-top: 5px;
+    margin-top: 200px;
     margin-bottom: 60px;
     display: flex;
     justify-content: center;
