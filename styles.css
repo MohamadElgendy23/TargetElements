@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(156, 173, 156);
+    background-color: rgb(231, 233, 253);
 }
 
 .header-container {
@@ -9,7 +9,7 @@ body{
     align-items: center;
     margin-top: 64px;
     margin-bottom: 130px;
-    font-size: 475%;
+    font-size: 480%;
     font-weight: bold;
     font-style: italic;
     color: midnightblue;
@@ -77,8 +77,21 @@ button:hover {
 
 .controls-container {
     margin-top: 300px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     display: flex;  
-    flex-wrap: wrap;
     justify-content: center;
+}
+
+.reset-container {
+    display: flex;  
+    justify-content: center;
+}
+
+.reset-container button {
+    width: 150px;
+    background-color: red;
+}
+
+.reset-container button:hover {
+    background-color: rgb(193, 59, 193);
 }

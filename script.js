@@ -4,8 +4,16 @@ const greenBtn = document.querySelector(".btn-green");
 const redYellowBtn = document.querySelector(".btn-red-yellow");
 const oddBtn = document.querySelector(".btn-odd");
 const notBlackBtn = document.querySelector(".btn-not-black");
-const turbulenceAllBtn = document.querySelector(".btn-turbulence-all");
+const customAllBtn = document.querySelector(".btn-custom-all");
 const rotateAllBtn = document.querySelector(".btn-rotate-all");
+const resetBtn = document.querySelector(".btn-reset");
+
+const originalElementsContainer = document.querySelector(
+  ".elements-container"
+).innerHTML;
+const originalControlsContainer = document.querySelector(
+  ".controls-container"
+).innerHTML;
 
 /*Animate logic*/
 var special = anime({
@@ -33,23 +41,35 @@ var notBlack = anime({
   translateY: 250,
   autoplay: false,
 });
-var turbulenceAll = anime({
-  targets: document.querySelectorAll(".square"),
-  points: "64 128 8.574 96 8.574 32 64 0 119.426 32 119.426 96",
-  baseFrequency: 0,
-  scale: 1,
-  loop: true,
-  direction: "alternate",
-  easing: "easeInOutExpo",
-});
 var rotateAll = anime({
   targets: document.querySelectorAll(".square"),
   rotate: 360,
   easing: "linear",
   loop: true,
-  duration: 800,
+  duration: 2000,
   autoplay: false,
 });
+var customAll = anime({
+  targets: document.querySelectorAll(".square"),
+  translateY: 250,
+  rotate: function () {
+    return anime.random(-360, 330);
+  },
+  direction: "alternate",
+  loop: true,
+  duration: 1900,
+  restart: function (el, i, total) {
+    return function (t) {
+      return Math.pow(Math.sin(t * (i + 2.5)), total);
+    };
+  },
+  autoplay: false,
+});
+
+var resetAll = function () {
+  document.querySelector(".elements-container").innerHTML =
+    originalElementsContainer;
+};
 
 /*Hook Up On Click For Buttons*/
 specialBtn.onclick = special.restart;
@@ -57,5 +77,6 @@ greenBtn.onclick = firstGreen.restart;
 redYellowBtn.onclick = redYellow.restart;
 oddBtn.onclick = odd.restart;
 notBlackBtn.onclick = notBlack.restart;
-turbulenceAllBtn.onclick = turbulenceAll.restart;
+customAllBtn.onclick = customAll.restart;
 rotateAllBtn.onclick = rotateAll.restart;
+resetBtn.onclick = resetAll;
