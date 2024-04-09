@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(26, 189, 239);
+    background: linear-gradient(to left, rgb(98, 161, 176) 60%, rgb(141, 141, 235)) right;
 }
 
 .header-container {
@@ -9,7 +9,7 @@ body{
     align-items: center;
     margin-top: 64px;
     margin-bottom: 130px;
-    font-size: 390%;
+    font-size: 475%;
     font-weight: bold;
     font-style: italic;
     color: midnightblue;
@@ -30,7 +30,7 @@ body{
     position: relative;
     width: 100px;
     height: 100px;
-    margin: 10px;
+    margin: 14px;
 }
 
 .green {
@@ -62,7 +62,7 @@ button {
     background-color: rgb(233, 178, 12);
     background-image: none;
     color: black;
-    margin: 15px;
+    margin: 12px;
     padding: 20px;
     border-radius: 4px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -76,9 +76,9 @@ button:hover {
 }
 
 .controls-container {
-    margin-top: 200px;
+    margin-top: 300px;
     margin-bottom: 60px;
-    display: flex;
+    display: flex;  
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
