@@ -44,17 +44,18 @@ var turbulenceAll = anime({
 });
 var rotateAll = anime({
   targets: document.querySelectorAll(".square"),
-  rotateY: "360",
+  rotate: 360,
   easing: "linear",
   loop: true,
   duration: 800,
   autoplay: false,
 });
 
-/*Hook Up Event Listeners*/
-specialBtn.addEventListener("click", special);
-greenBtn.addEventListener("click", firstGreen);
-redYellowBtn.addEventListener("click", redYellow);
-oddBtn.addEventListener("click", odd);
-notBlackBtn.addEventListener("click", notBlack);
-rotateAllBtn.addEventListener("click", rotateAll);
+/*Hook Up On Click For Buttons*/
+specialBtn.onclick = special.restart;
+greenBtn.onclick = firstGreen.restart;
+redYellowBtn.onclick = redYellow.restart;
+oddBtn.onclick = odd.restart;
+notBlackBtn.onclick = notBlack.restart;
+turbulenceAllBtn.onclick = turbulenceAll.restart;
+rotateAllBtn.onclick = rotateAll.restart;
