@@ -66,11 +66,6 @@ var customAll = anime({
   autoplay: false,
 });
 
-var resetAll = function () {
-  document.querySelector(".elements-container").innerHTML =
-    originalElementsContainer;
-};
-
 /*Hook Up On Click For Buttons*/
 specialBtn.onclick = special.restart;
 greenBtn.onclick = firstGreen.restart;
@@ -79,4 +74,3 @@ oddBtn.onclick = odd.restart;
 notBlackBtn.onclick = notBlack.restart;
 customAllBtn.onclick = customAll.restart;
 rotateAllBtn.onclick = rotateAll.restart;
-resetBtn.onclick = resetAll;

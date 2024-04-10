@@ -81,17 +81,3 @@ button:hover {
     display: flex;  
     justify-content: center;
 }
-
-.reset-container {
-    display: flex;  
-    justify-content: center;
-}
-
-.reset-container button {
-    width: 150px;
-    background-color: red;
-}
-
-.reset-container button:hover {
-    background-color: rgb(193, 59, 193);
-}
