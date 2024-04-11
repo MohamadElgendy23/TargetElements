@@ -49,6 +49,14 @@ var rotateAll = anime({
   duration: 2000,
   autoplay: false,
 });
+var changeColorAll = anime({
+  targets: document.querySelectorAll(".square"),
+  rotate: 360,
+  easing: "linear",
+  loop: true,
+  duration: 2000,
+  autoplay: false,
+});
 var customAll = anime({
   targets: document.querySelectorAll(".square"),
   translateY: 250,
