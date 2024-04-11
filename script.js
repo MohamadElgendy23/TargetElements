@@ -49,7 +49,7 @@ var rotateAll = anime({
   duration: 2000,
   autoplay: false,
 });
-var changeColorAll = anime({
+var changeColorsAll = anime({
   targets: document.querySelectorAll(".square"),
   rotate: 360,
   easing: "linear",
