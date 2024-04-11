@@ -8,5 +8,5 @@ CRITERIA:
 4) Toggle Odd: Translates odd position squares down 250 pixels.
 5) Toggle Not-Black: Translates all squares that aren't black down 250 pixels.
 6) Toggle Rotation: Rotates all squares 360 degrees.
-7) Toggle Change Color: Changes colors of all squares.
+7) Toggle Change Colors: Changes colors of all squares.
 8) Toggle Custom: Custom movement of all squares.
