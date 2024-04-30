@@ -4,15 +4,11 @@ const greenBtn = document.querySelector(".btn-green");
 const redYellowBtn = document.querySelector(".btn-red-yellow");
 const oddBtn = document.querySelector(".btn-odd");
 const notBlackBtn = document.querySelector(".btn-not-black");
-const customAllBtn = document.querySelector(".btn-custom-all");
 const rotateAllBtn = document.querySelector(".btn-rotate-all");
-const resetBtn = document.querySelector(".btn-reset");
+const customAllBtn = document.querySelector(".btn-custom-all");
 
 const originalElementsContainer = document.querySelector(
   ".elements-container"
-).innerHTML;
-const originalControlsContainer = document.querySelector(
-  ".controls-container"
 ).innerHTML;
 
 /*Animate logic*/
@@ -51,10 +47,7 @@ var rotateAll = anime({
 });
 var changeColorsAll = anime({
   targets: document.querySelectorAll(".square"),
-  rotate: 360,
-  easing: "linear",
-  loop: true,
-  duration: 2000,
+  backgroundColor: "#f96",
   autoplay: false,
 });
 var customAll = anime({
