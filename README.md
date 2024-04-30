@@ -1,4 +1,4 @@
-This project allows users to toggle elements based on a number of different criteria that they can select. Created using the JS library; anime.js. 
+This "small" project allows users to toggle elements based on a number of different criteria that they can select. Created using the JS library; anime.js. 
 
 CRITERIA: 
 
@@ -8,5 +8,8 @@ CRITERIA:
 4) Toggle Odd: Translates odd position squares down 250 pixels.
 5) Toggle Not-Black: Translates all squares that aren't black down 250 pixels.
 6) Toggle Rotation: Rotates all squares 360 degrees.
-7) Toggle Change Colors: Changes colors of all squares.
-8) Toggle Custom: Custom movement of all squares.
+8) Toggle Custom: Custom movement of all squares using sin and angles.
+
+WHY: 
+
+Its a fun project that allows users to toggle the squares as they like and to see how it performs using continuous toggle clicks. Also, I enjoy JavaScript, so using one of the libraries was fun. 
